@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(216, 32, 32);
+}
+#navbar{
+    width: 100%;
+    height: 50px;
+    border: 2px solid brown;
+    align-items: center;
+    background-color: brown;
+    color: orange;
+    display: flex;
+    gap: 2rem;
+    padding-left: 5%;
+}
+#navbar>a{
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: orangered;
+}
+h2{
+    text-align: center;
+    color: orange;
+}
+
+h1{
+    text-align: center;
+    background-color: orchid;
+}
+
+#search-box{
+    text-align: center;
+}
+#search{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+}
+#btn{
+    height: 30px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+#search-content{
+    text-align: center;
+}
+#result{
+    width: 90%;
+    margin: auto;
+}
+.item{
+    width: 25%;
+    height: 250px;
+    border: 2px solid red;
+    float: left;
+    margin: 3%;
+    text-align: center;
+    font-size: 12px;
+    background-color: saddlebrown;
+}
+.item>img{
+    width: 100%;
+    height: 75%;
+}
+
+.food-item{
+    width: 100%;
+    border: 2px solid red;
+    margin: 2%;
+    text-align: center;
+    background-color: saddlebrown;
+}
+
+.latest-item{
+    width: 60%;
+    border: 2px solid red;
+    margin: auto;
+    text-align: center;
+    background-color: saddlebrown;
+}
+.latest-item>img{
+    width: 100%;
+    height: 70%;
+}
