@@ -1,8 +1,21 @@
 
 window.addEventListener("load",()=>{
     const btn = document.getElementById("btn");
-    btn.addEventListener("click",searchFood);
+    const fn = ()=>{
+           searchFood();
+       }
+       const debouncedCallback = debouncer(()=>fn(),2000)
+       btn.addEventListener("click",debouncedCallback)
+    //    btn.addEventListener("click",searchFood);
 })
+
+function debouncer(fn, delay){
+    let id ;
+    return ()=>{
+      id && clearTimeout(id);
+      id = setTimeout(()=>fn(),delay);
+   }
+}
 
 const foodData = async (foodName)=>{
     try{
@@ -17,8 +30,8 @@ const foodData = async (foodName)=>{
 
 }
 
-const searchFood=(e)=>{
-    e.preventDefault();
+const searchFood=()=>{
+    // e.preventDefault();
 
     const search = document.getElementById("search").value;
     foodData(search);
